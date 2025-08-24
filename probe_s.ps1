@@ -1,5 +1,5 @@
 # probe_settings.ps1
-$base = "https://api.anytask.com/settings"
+$base = ""
 $headers = @{
     "Authorization" = "Bearer "
     "Content-Type"  = "application/json"

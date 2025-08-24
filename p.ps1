@@ -21,7 +21,7 @@ foreach ($endpoint in $endpoints) {
         Write-Host "Testing $method $endpoint"
 
         try {
-            $response = Invoke-WebRequest -Uri "https://api.anytask.com$endpoint" `
+            $response = Invoke-WebRequest -Uri "$endpoint" `
                 -Method $method `
                 -Headers @{
                     "Authorization" = "Bearer $token"

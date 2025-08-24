@@ -4,7 +4,7 @@ param(
 )
 
 function Get-Settings($jwt) {
-    $url = "https://api.anytask.com/settings"
+    $url = ""
     $headers = @{ "Authorization" = "Bearer $jwt" }
     try {
         $resp = Invoke-WebRequest -Uri $url -Headers $headers -Method GET -UseBasicParsing

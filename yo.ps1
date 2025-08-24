@@ -12,7 +12,7 @@ if (Test-Path $envPath) {
 
 if (-not $START_ID) { $START_ID = 1 }
 if (-not $END_ID) { $END_ID = 20 }
-if (-not $BASE_DOMAIN) { $BASE_DOMAIN = "https://api.anytask.com" }
+if (-not $BASE_DOMAIN) { $BASE_DOMAIN = "" }
 $endpoints = @(
     "/settings",
     "/profile",

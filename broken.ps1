@@ -10,7 +10,7 @@ $body = @"
 }
 "@
 
-Invoke-WebRequest -Uri "https://api.anytask.com/settings" -Method PATCH -Headers $headers -Body $body -UseBasicParsing
-$response = Invoke-WebRequest -Uri "https://api.anytask.com/settings" -Method PATCH -Headers $headers -Body $body -UseBasicParsing
+Invoke-WebRequest -Uri "" -Method PATCH -Headers $headers -Body $body -UseBasicParsing
+$response = Invoke-WebRequest -Uri "" -Method PATCH -Headers $headers -Body $body -UseBasicParsing
 $response.StatusCode
 $response.Content
